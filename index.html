@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GM Paineis Solares | Limpeza Profissional de Placas Solares em Andradina</title>
+  <meta name="description" content="Especialistas em limpeza de paineis solares em Andradina e regiao. Aumente a eficiencia das suas placas solares em ate 30%. Orcamento gratuito!" />
+  <meta name="keywords" content="limpeza de placas solares, paineis solares, Andradina, energia solar, manutencao solar" />
+  <meta name="theme-color" content="#1565C0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: { DEFAULT: '#1565C0', foreground: '#ffffff' },
+            accent: { DEFAULT: '#0EA5E9', foreground: '#ffffff' },
+            foreground: '#142034',
+            muted: { DEFAULT: '#f0f4f8', foreground: '#5f7185' },
+            card: { DEFAULT: '#ffffff', foreground: '#142034' },
+            border: '#d6dfe8',
+            background: '#f5f8fc',
+            destructive: '#e53e3e',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f5f8fc; color: #142034; margin: 0; }
+    .font-heading { font-family: 'Poppins', sans-serif; }
+    @keyframes fade-in-up { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes pulse-glow { 0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); } 50% { box-shadow: 0 0 0 12px rgba(37,211,102,0); } }
+    .animate-fade-in-up { animation: fade-in-up 0.7s ease-out forwards; }
+    .animate-pulse-glow { animation: pulse-glow 2s infinite; }
+    .nav-scrolled { background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-bottom: 1px solid #d6dfe8; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding-top: 0; padding-bottom: 0; }
+    .faq-answer.open { max-height: 300px; padding-top: 0.5rem; padding-bottom: 1.25rem; }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-chevron.open { transform: rotate(180deg); }
+    /* Hide scrollbar for testimonials */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- ========== HEADER ========== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+        </div>
+        <div>
+          <span id="logo-text" class="font-heading text-lg font-bold leading-tight text-white">GM Paineis</span>
+          <span id="logo-sub" class="block text-xs font-medium leading-tight text-white/80">Solares</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-1 lg:flex">
+        <a href="#inicio" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Inicio</a>
+        <a href="#sobre" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Sobre</a>
+        <a href="#servicos" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Serviços</a>
+        <a href="#beneficios" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Beneficios</a>
+        <a href="#depoimentos" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Depoimentos</a>
+        <a href="#faq" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">FAQ</a>
+        <a href="#contato" class="nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10">Contato</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="tel:+5518991024015" class="inline-flex items-center gap-2 rounded-md border border-white/30 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10" id="btn-ligar">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Ligar Agora
+        </a>
+        <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary/90">
+          Orcamento Gratis
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-toggle" class="lg:hidden rounded-md p-2 text-white hover:bg-white/10 transition-colors" aria-label="Abrir menu">
+        <svg id="icon-menu" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <svg id="icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl border-t border-border">
+      <div class="flex flex-col gap-1 px-4 py-4">
+        <a href="#inicio" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Inicio</a>
+        <a href="#sobre" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Sobre</a>
+        <a href="#servicos" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Serviços</a>
+        <a href="#beneficios" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Beneficios</a>
+        <a href="#depoimentos" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Depoimentos</a>
+        <a href="#faq" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">FAQ</a>
+        <a href="#contato" class="mobile-link rounded-md px-4 py-3 text-base font-medium text-foreground hover:bg-primary/10 hover:text-primary">Contato</a>
+        <div class="flex flex-col gap-3 pt-4 border-t border-border mt-2">
+          <a href="tel:+5518991024015" class="inline-flex items-center justify-center gap-2 rounded-md border border-border px-4 py-3 text-sm font-medium text-foreground hover:bg-muted">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Ligar Agora
+          </a>
+          <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-white hover:bg-primary/90">
+            Orcamento Gratis
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <video 
+      src="./img/WhatsApp Video 2026-02-06 at 18.59.23.mp4" 
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      class="h-full w-full object-cover">
+    </video>
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(10,20,40,0.92), rgba(10,20,40,0.75), rgba(10,20,40,0.50));"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-4 py-32 lg:px-8">
+    <div class="max-w-2xl animate-fade-in-up">
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm font-medium text-sky-300">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Especialista em Andradina e Região
+      </div>
+      
+      <h1 class="font-heading text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl" style="text-wrap:balance;">
+        Limpeza Técnica de <span class="text-sky-400">Painéis Solares</span>
+      </h1>
+      
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
+        Recupere a eficiência do seu sistema fotovoltaico em até 30%. Ofereço um serviço especializado com equipamentos profissionais para garantir o máximo desempenho da sua geração de energia.
+      </p>
+
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg">
+          Solicitar Orçamento Direto
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
+        <a href="#servicos" class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10">
+          Meus Serviços
+        </a>
+      </div>
+
+      <div class="mt-12 flex flex-wrap items-center gap-6">
+        <div class="flex items-center gap-2 text-white/70">
+          <svg class="h-5 w-5 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span class="text-sm font-medium">Garantia no Serviço</span>
+        </div>
+        <div class="flex items-center gap-2 text-white/70">
+          <svg class="h-5 w-5 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span class="text-sm font-medium">+30% Eficiência</span>
+        </div>
+        <div class="flex items-center gap-2 text-white/70">
+          <svg class="h-5 w-5 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+          <span class="text-sm font-medium">Atendimento Pessoal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 h-32" style="background: linear-gradient(to top, #f5f8fc, transparent);"></div>
+</section>
+
+  <section id="servicos" class="bg-white py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="mb-16 text-center">
+      <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-accent">Meus Serviços</span>
+      <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl" style="text-wrap:balance;">Soluções especializadas para seus painéis</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">Ofereço um cuidado técnico completo para manter seu investimento em energia solar rendendo ao máximo, com a atenção e o profissionalismo que você merece.</p>
+    </div>
+    
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Limpeza Técnica</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Executo a lavagem profissional utilizando equipamentos específicos que removem toda a sujeira sem causar riscos ou danos aos seus módulos.</p>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Inspeção Detalhada</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Realizo uma análise minuciosa de cada painel para identificar possíveis danos, microfissuras ou pontos que estejam prejudicando seu rendimento.</p>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Manutenção Preventiva</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Faço o acompanhamento periódico do seu sistema para garantir que ele opere sempre no topo da performance, evitando surpresas na conta.</p>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Proteção de Superfície</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Aplico revestimentos protetores que reduzem drasticamente o acúmulo de poeira e facilitam a autolimpeza com a água da chuva.</p>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Análise de Rendimento</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Entrego um relatório com medições técnicas de antes e depois, comprovando o ganho real de eficiência gerado pelo meu trabalho.</p>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl border border-border bg-background p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+          <svg class="h-7 w-7 text-primary transition-colors group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-foreground">Atendimento Urgente</h3>
+        <p class="mt-3 leading-relaxed text-muted-foreground">Disponibilidade para limpezas emergenciais em casos de excesso de fuligem, resíduos de queimadas ou dejetos de animais.</p>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg">
+        Solicitar Orçamento Comigo
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section class="bg-white py-20 lg:py-28 border-t border-border">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div>
+        <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-accent">Resultado Real</span>
+        <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl" style="text-wrap:balance;">Veja a diferença que uma limpeza profissional faz</h2>
+        <p class="mt-6 leading-relaxed text-muted-foreground">Painéis solares acumulam poeira, poluição, fezes de pássaros e resíduos que criam uma barreira contra a luz solar, reduzindo drasticamente a eficiência do seu sistema.</p>
+        <p class="mt-4 leading-relaxed text-muted-foreground">Com a limpeza especializada da <strong>GM Painéis Solares</strong>, você recupera a capacidade de geração e garante que seu investimento continue rendendo o máximo esperado.</p>
+        
+        <div class="mt-8 grid grid-cols-2 gap-4">
+          <div class="rounded-xl bg-red-50 p-4 border border-red-100">
+            <p class="font-heading text-2xl font-bold text-destructive">-30%</p>
+            <p class="text-sm text-muted-foreground">Perda média com painéis sujos</p>
+          </div>
+          <div class="rounded-xl bg-green-50 p-4 border border-green-100">
+            <p class="font-heading text-2xl font-bold text-green-600">+30%</p>
+            <p class="text-sm text-muted-foreground">Ganho imediato após limpeza</p>
+          </div>
+        </div>
+        
+        <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg">
+          Quero Recuperar Minha Geração
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-2xl">
+        <img src="./img/WhatsApp Image 2026-02-06 at 18.59.24.jpeg" alt="Detalhe do serviço de limpeza técnica" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beneficios" class="py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div class="relative order-2 lg:order-1">
+        <div class="overflow-hidden rounded-2xl shadow-2xl">
+          <img src="./img/WhatsApp Image 2026-02-06 at 18.59.35 (1).jpeg" alt="Comparativo antes e depois da limpeza de painéis" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -top-4 -left-4 rounded-xl bg-primary p-4 text-white shadow-xl sm:-left-6">
+          <p class="font-heading text-3xl font-extrabold">+30%</p>
+          <p class="text-sm font-medium text-white/80">Mais Eficiência</p>
+        </div>
+      </div>
+      
+      <div class="order-1 lg:order-2">
+        <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-accent">Por Que Limpar?</span>
+        <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl" style="text-wrap:balance;">Benefícios que você sente no bolso todos os meses</h2>
+        
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-4">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+              <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-lg font-bold text-foreground">Máxima Geração de Energia</h3>
+              <p class="mt-1 text-sm leading-relaxed text-muted-foreground">Módulos limpos absorvem a radiação solar sem barreiras, garantindo que o sistema atinja o pico de produção previsto no projeto.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+              <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-lg font-bold text-foreground">Retorno do Investimento (Payback)</h3>
+              <p class="mt-1 text-sm leading-relaxed text-muted-foreground">Quanto mais você gera, menos paga à concessionária. A limpeza acelera o tempo de retorno do valor investido no sistema.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+              <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-lg font-bold text-foreground">Prevenção de "Hotspots"</h3>
+              <p class="mt-1 text-sm leading-relaxed text-muted-foreground">Sujeiras localizadas (como fezes de pássaros) podem causar superaquecimento em pontos do painel, danificando as células permanentemente.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+              <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-lg font-bold text-foreground">Manutenção da Garantia</h3>
+              <p class="mt-1 text-sm leading-relaxed text-muted-foreground">Muitos fabricantes exigem a limpeza técnica periódica para manter a validade da garantia dos módulos solares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="mb-16 text-center">
+      <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-white/60">Como eu trabalho</span>
+      <h2 class="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl" style="text-wrap:balance;">Simples, direto e personalizado</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/70">Em apenas 4 passos, eu garanto que seus painéis voltem a gerar o máximo de energia com total segurança.</p>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="relative text-center group">
+        <div class="hidden lg:block absolute top-10 left-1/2 w-full border-t-2 border-dashed border-white/10"></div>
+        <div class="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 bg-white/10 transition-colors group-hover:bg-white/20">
+          <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">01</span>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-white">Contato Direto</h3>
+        <p class="mt-3 text-sm leading-relaxed text-white/70">Você fala diretamente comigo pelo WhatsApp. Entendo sua necessidade e agendamos a melhor data para você.</p>
+      </div>
+
+      <div class="relative text-center group">
+        <div class="hidden lg:block absolute top-10 left-1/2 w-full border-t-2 border-dashed border-white/10"></div>
+        <div class="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 bg-white/10 transition-colors group-hover:bg-white/20">
+          <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          <span class="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">02</span>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-white">Minha Avaliação</h3>
+        <p class="mt-3 text-sm leading-relaxed text-white/70">Eu realizo uma análise técnica no local para verificar o estado das placas e definir o melhor método de limpeza.</p>
+      </div>
+
+      <div class="relative text-center group">
+        <div class="hidden lg:block absolute top-10 left-1/2 w-full border-t-2 border-dashed border-white/10"></div>
+        <div class="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 bg-white/10 transition-colors group-hover:bg-white/20">
+          <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span class="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">03</span>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-white">Serviço Especializado</h3>
+        <p class="mt-3 text-sm leading-relaxed text-white/70">Eu mesmo executo a limpeza utilizando equipamentos próprios e técnicas que preservam a integridade do seu sistema.</p>
+      </div>
+
+      <div class="relative text-center group">
+        <div class="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 bg-white/10 transition-colors group-hover:bg-white/20">
+          <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg> <span class="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">04</span>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-white">Entrega de Resultados</h3>
+        <p class="mt-3 text-sm leading-relaxed text-white/70">Finalizo o serviço com a comprovação da melhora na geração e um relatório fotográfico do antes e depois.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="depoimentos" class="bg-white py-20 lg:py-28">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="mb-16 flex flex-col items-center justify-between gap-6 sm:flex-row">
+      <div>
+        <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-accent">Depoimentos</span>
+        <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl" style="text-wrap:balance;">O que meus clientes dizem</h2>
+      </div>
+      <!-- <div class="flex gap-2">
+        <button id="test-prev" class="h-12 w-12 flex items-center justify-center rounded-full border border-border text-foreground hover:bg-muted transition-colors disabled:opacity-40" aria-label="Depoimento anterior">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="test-next" class="h-12 w-12 flex items-center justify-center rounded-full border border-border text-foreground hover:bg-muted transition-colors disabled:opacity-40" aria-label="Proximo depoimento">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div> -->
+    </div>
+    <div class="overflow-hidden">
+      <div id="testimonial-track" class="flex gap-6 transition-transform duration-500 ease-out">
+        <div class="w-full shrink-0 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-xl border border-border bg-background p-6 lg:p-8">
+          <svg class="mb-4 h-8 w-8 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          <p class="leading-relaxed text-muted-foreground">"O trabalho do Gercino é diferenciado. Minha geração de energia aumentou 28% logo de cara. Ele é muito caprichoso e entende tudo de painéis solares."</p>
+          <div class="mt-6 flex items-center gap-1">
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="mt-4 border-t border-border pt-4">
+            <p class="font-heading font-bold text-foreground">Carlos Mendes</p>
+            <p class="text-sm text-muted-foreground">Andradina - SP</p>
+          </div>
+        </div>
+        
+        <div class="w-full shrink-0 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-xl border border-border bg-background p-6 lg:p-8">
+          <svg class="mb-4 h-8 w-8 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          <p class="leading-relaxed text-muted-foreground">"Serviço excelente! O Gercino me mostrou o quanto eu estava perdendo de energia por causa da sujeira. Agora faço a manutenção com ele a cada 6 meses."</p>
+          <div class="mt-6 flex items-center gap-1">
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="mt-4 border-t border-border pt-4">
+            <p class="font-heading font-bold text-foreground">Maria Aparecida</p>
+            <p class="text-sm text-muted-foreground">Castilho - SP</p>
+          </div>
+        </div>
+        <div class="w-full shrink-0 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-xl border border-border bg-background p-6 lg:p-8">
+          <svg class="mb-4 h-8 w-8 text-primary/20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          <p class="leading-relaxed text-muted-foreground">"Profissional sério e muito competente. O Gercino limpou todos os painéis do sítio com equipamentos de ponta e o resultado foi imediato. Recomendo!"</p>
+          <div class="mt-6 flex items-center gap-1">
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="h-4 w-4 fill-amber-400 text-amber-400" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="mt-4 border-t border-border pt-4">
+            <p class="font-heading font-bold text-foreground">João Silva</p>
+            <p class="text-sm text-muted-foreground">Ilha Solteira - SP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq" class="py-20 lg:py-28">
+  <div class="mx-auto max-w-3xl px-4 lg:px-8">
+    <div class="mb-12 text-center">
+      <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-widest text-accent">Dúvidas Frequentes</span>
+      <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl" style="text-wrap:balance;">Perguntas mais comuns</h2>
+      <p class="mx-auto mt-4 max-w-xl text-muted-foreground">Tire suas dúvidas sobre como realizo a limpeza dos seus painéis solares.</p>
+    </div>
+
+    <div class="space-y-3" id="faq-container">
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Com que frequência devo limpar meus painéis solares?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          Recomendo a limpeza a cada 6 meses, mas isso pode variar conforme a região. Em Andradina e cidades próximas, onde há muita poeira e períodos secos, a limpeza semestral que realizo é ideal para manter a eficiência máxima do seu sistema.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>A limpeza pode danificar meus painéis?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          Não! Eu utilizo apenas equipamentos específicos para painéis fotovoltaicos. Sou treinado para realizar o serviço de forma segura, aplicando técnicas que eliminam qualquer risco de arranhões ou danos estruturais às placas.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Quanto tempo leva o serviço?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          Para residências com até 20 painéis, levo em média de 1 a 2 horas para concluir o trabalho. Para sistemas maiores, como em comércios ou propriedades rurais, faço uma avaliação prévia para te passar o tempo estimado com precisão.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Você atende outras cidades além de Andradina?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          Sim! Atendo toda a região de Andradina, incluindo Castilho, Ilha Solteira, Pereira Barreto, Guaraçaí e Murutinga do Sul. Entre em contato para verificar a disponibilidade na sua localidade.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Preciso estar em casa durante o serviço?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          É recomendável que alguém acompanhe o início e o fim do serviço, mas não é obrigatório. Preciso apenas que o acesso ao local dos painéis e a uma fonte de água esteja garantido para eu realizar o trabalho.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Qual o custo do seu serviço de limpeza?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          O valor varia conforme a quantidade de painéis, o tipo de instalação (telhado ou solo) e o nível de sujeira acumulada. Eu ofereço orçamentos gratuitos! Me chame pelo WhatsApp e receba sua cotação sem compromisso.
+        </div>
+      </div>
+
+      <div class="faq-item rounded-xl border border-border bg-white px-6 transition-shadow hover:shadow-md">
+        <button class="faq-trigger flex w-full items-center justify-between py-5 text-left font-heading text-base font-semibold text-foreground hover:text-primary transition-colors" aria-expanded="false">
+          <span>Você emite nota fiscal?</span>
+          <svg class="faq-chevron h-5 w-5 shrink-0 text-muted-foreground" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer text-muted-foreground leading-relaxed">
+          Sim, emito nota fiscal para todos os serviços que realizo. Trabalho com total transparência e profissionalismo para atender clientes residenciais, comerciais e industriais.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="relative overflow-hidden bg-primary py-20 lg:py-28">
+  <div class="absolute top-0 left-0 h-full w-full">
+    <div class="absolute top-10 left-10 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 h-96 w-96 rounded-full bg-sky-400/10 blur-3xl"></div>
+  </div>
+  <div class="relative z-10 mx-auto max-w-4xl px-4 text-center lg:px-8">
+    <h2 class="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl" style="text-wrap:balance;">Pronto para aumentar a eficiência dos seus painéis?</h2>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-white/80">Fale diretamente com o Gercino e receba um orçamento gratuito. Estamos prontos para atender você em Andradina e toda a região.</p>
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-semibold text-foreground transition-all hover:bg-gray-100 hover:shadow-lg">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Chamar no WhatsApp
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+5518991024015" class="inline-flex items-center gap-2 rounded-lg border border-white/30 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (18) 99102-4015
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="contato" style="background: #0a1420; color: #8fa8c4;">
+  <div class="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-2">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+          </div>
+          <div>
+            <span class="font-heading text-lg font-bold text-white">GM Painéis</span>
+            <span class="block text-xs font-medium" style="color:#6b8baa;">Solares</span>
+          </div>
+        </div>
+        <p class="mt-4 max-w-xs text-sm leading-relaxed" style="color:#5a7a96;">Gercino e sua equipe são especialistas em limpeza e manutenção de painéis solares em Andradina e região. Garantimos o máximo desempenho do seu investimento.</p>
+      </div>
+      <div>
+        <h3 class="font-heading text-sm font-semibold uppercase tracking-widest text-white">Links Rápidos</h3>
+        <nav class="mt-4 flex flex-col gap-2">
+          <a href="#inicio" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Início</a>
+          <a href="#sobre" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Sobre Nós</a>
+          <a href="#servicos" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Serviços</a>
+          <a href="#beneficios" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Benefícios</a>
+          <a href="#depoimentos" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Depoimentos</a>
+          <a href="#faq" class="text-sm transition-colors hover:text-primary" style="color:#5a7a96;">Perguntas Frequentes</a>
+        </nav>
+      </div>
+      <div>
+        <h3 class="font-heading text-sm font-semibold uppercase tracking-widest text-white">Serviços</h3>
+        <div class="mt-4 flex flex-col gap-2" style="color:#5a7a96;">
+          <span class="text-sm">Limpeza Completa</span>
+          <span class="text-sm">Inspeção Técnica</span>
+          <span class="text-sm">Manutenção Preventiva</span>
+          <span class="text-sm">Proteção Anti-Sujeira</span>
+          <span class="text-sm">Relatório de Desempenho</span>
+          <span class="text-sm">Limpeza de Emergência</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-heading text-sm font-semibold uppercase tracking-widest text-white">Contato</h3>
+        <div class="mt-4 flex flex-col gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="text-sm" style="color:#5a7a96;">Andradina - SP, Brasil</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+5518991024015" class="text-sm hover:text-primary" style="color:#5a7a96;">(18) 99102-4015</a>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:gercinogeo@uol.com.br" class="text-sm hover:text-primary" style="color:#5a7a96;">gercinogeo@uol.com.br</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row" style="border-color:#1a2a3a;">
+      <p class="text-sm" style="color:#4a6a86;">2026 GM Painéis Solares. Todos os direitos reservados.</p>
+      <p class="text-sm" style="color:#4a6a86;">Andradina - SP</p>
+    </div>
+  </div>
+</footer>
+  <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+  <a href="https://wa.me/5518991024015" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl animate-pulse-glow" style="background:#25D366;" aria-label="Falar no WhatsApp">
+    <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // === Seleção de Elementos ===
+    const header = document.getElementById('main-header');
+    const logoText = document.getElementById('logo-text');
+    const logoSub = document.getElementById('logo-sub');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const btnLigar = document.getElementById('btn-ligar');
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+    const statsSection = document.getElementById('stats-section');
+
+    // === 1. Header scroll effect ===
+    function updateHeader() {
+      if (!header) return;
+      const scrolled = window.scrollY > 20;
+      
+      if (scrolled) {
+        header.classList.add('nav-scrolled');
+        if (logoText) logoText.className = 'font-heading text-lg font-bold leading-tight text-foreground';
+        if (logoSub) logoSub.className = 'block text-xs font-medium leading-tight text-muted-foreground';
+        navLinks.forEach(l => {
+          l.className = 'nav-link rounded-md px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary';
+        });
+        if (btnLigar) {
+          btnLigar.className = 'inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted';
+        }
+        if (mobileToggle) mobileToggle.className = 'lg:hidden rounded-md p-2 text-foreground hover:bg-muted transition-colors';
+      } else {
+        header.classList.remove('nav-scrolled');
+        if (logoText) logoText.className = 'font-heading text-lg font-bold leading-tight text-white';
+        if (logoSub) logoSub.className = 'block text-xs font-medium leading-tight text-white/80';
+        navLinks.forEach(l => {
+          l.className = 'nav-link rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10';
+        });
+        if (btnLigar) {
+          btnLigar.className = 'inline-flex items-center gap-2 rounded-md border border-white/30 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10';
+        }
+        if (mobileToggle) mobileToggle.className = 'lg:hidden rounded-md p-2 text-white hover:bg-white/10 transition-colors';
+      }
+    }
+    window.addEventListener('scroll', updateHeader);
+    updateHeader();
+
+    // === 2. Mobile menu ===
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        const isClosed = mobileMenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenu.classList.remove('hidden');
+          iconMenu?.classList.add('hidden');
+          iconClose?.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+          iconMenu?.classList.remove('hidden');
+          iconClose?.classList.add('hidden');
+        }
+      });
+
+      // Fechar ao clicar nos links
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          iconMenu?.classList.remove('hidden');
+          iconClose?.classList.add('hidden');
+        });
+      });
+    }
+
+    // === 3. Animated stats ===
+    if (statsSection) {
+      const statNumbers = statsSection.querySelectorAll('[data-target]');
+      let statsAnimated = false;
+
+      const animateStats = () => {
+        if (statsAnimated) return;
+        const rect = statsSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) {
+          statsAnimated = true;
+          statNumbers.forEach(el => {
+            const target = parseInt(el.dataset.target);
+            const suffix = el.dataset.suffix || '';
+            const duration = 2000;
+            let start = null;
+            
+            function step(timestamp) {
+              if (!start) start = timestamp;
+              const progress = Math.min((timestamp - start) / duration, 1);
+              el.textContent = Math.floor(progress * target) + suffix;
+              if (progress < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+          });
+        }
+      };
+      window.addEventListener('scroll', animateStats);
+      animateStats();
+    }
+
+    // === 4. Testimonials carousel ===
+    const track = document.getElementById('testimonial-track');
+    const prevBtn = document.getElementById('test-prev');
+    const nextBtn = document.getElementById('test-next');
+    
+    if (track && prevBtn && nextBtn) {
+      let testIndex = 0;
+      const getItemsPerView = () => {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 640) return 2;
+        return 1;
+      };
+
+      const updateCarousel = () => {
+        const perView = getItemsPerView();
+        const totalItems = track.children.length;
+        const maxIndex = Math.max(0, totalItems - perView);
+        testIndex = Math.max(0, Math.min(testIndex, maxIndex));
+        
+        const pct = testIndex * (100 / perView);
+        track.style.transform = `translateX(-${pct}%)`;
+        
+        prevBtn.style.opacity = testIndex === 0 ? "0.5" : "1";
+        prevBtn.style.pointerEvents = testIndex === 0 ? "none" : "auto";
+        nextBtn.style.opacity = testIndex >= maxIndex ? "0.5" : "1";
+        nextBtn.style.pointerEvents = testIndex >= maxIndex ? "none" : "auto";
+      };
+
+      prevBtn.addEventListener('click', () => { testIndex--; updateCarousel(); });
+      nextBtn.addEventListener('click', () => { testIndex++; updateCarousel(); });
+      window.addEventListener('resize', updateCarousel);
+      updateCarousel();
+    }
+
+    // === 5. FAQ Accordion ===
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const chevron = item.querySelector('.faq-chevron');
+        const isOpen = answer.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+        
+        if (!isOpen) {
+          answer.classList.add('open');
+          chevron.classList.add('open');
+        }
+      });
+    });
+
+    // === 6. Scroll reveal ===
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+      if (section.id !== 'inicio') {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(24px)';
+        section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        observer.observe(section);
+      }
+    });
+  })
+</script>
+</body>
+</html>
