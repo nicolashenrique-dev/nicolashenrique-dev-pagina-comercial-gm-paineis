@@ -277,9 +277,22 @@
           <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="overflow-hidden rounded-2xl shadow-2xl">
-        <img src="./img/WhatsApp Image 2026-02-06 at 18.59.24.jpeg" alt="Detalhe do serviço de limpeza técnica" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
-      </div>
+      <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+  <div id="carousel-wrapper" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 18.59.35 (2).jpeg" class="w-full object-cover h-full"></div>
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 18.59.35.jpeg" class="w-full object-cover h-full"></div>
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 18.59.36.jpeg" class="w-full object-cover h-full"></div>
+  </div>
+
+  <div class="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+    <button onclick="prevSlide()" class="bg-white/30 hover:bg-white/50 text-white rounded-full p-2 backdrop-blur-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+    </button>
+    <button onclick="nextSlide()" class="bg-white/30 hover:bg-white/50 text-white rounded-full p-2 backdrop-blur-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+    </button>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -288,9 +301,22 @@
   <div class="mx-auto max-w-7xl px-4 lg:px-8">
     <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
       <div class="relative order-2 lg:order-1">
-        <div class="overflow-hidden rounded-2xl shadow-2xl">
-          <img src="./img/WhatsApp Image 2026-02-06 at 18.59.35 (1).jpeg" alt="Comparativo antes e depois da limpeza de painéis" class="h-full w-full object-cover" />
-        </div>
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+  <div id="carousel-wrapper-2" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);">
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 19.07.55.jpeg" class="w-full object-cover h-full"></div>
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 19.07.54.jpeg" class="w-full object-cover h-full"></div>
+    <div class="min-w-full"><img src="./img/WhatsApp Image 2026-02-06 at 19.07.53 (1).jpeg" class="w-full object-cover h-full"></div>
+  </div>
+
+  <div class="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+    <button onclick="prevSlide2()" class="bg-white/30 hover:bg-white/50 text-white rounded-full p-2 backdrop-blur-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+    </button>
+    <button onclick="nextSlide2()" class="bg-white/30 hover:bg-white/50 text-white rounded-full p-2 backdrop-blur-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+    </button>
+  </div>
+</div>
         <div class="absolute -top-4 -left-4 rounded-xl bg-primary p-4 text-white shadow-xl sm:-left-6">
           <p class="font-heading text-3xl font-extrabold">+25%</p>
           <p class="text-sm font-medium text-white/80">Mais Eficiência</p>
@@ -809,6 +835,55 @@
       }
     });
   })
+</script>
+<script>
+  let currentIndex = 0;
+  const totalSlides = 3; // Número de fotos
+  const wrapper = document.getElementById('carousel-wrapper');
+
+  function updateCarousel() {
+    const offset = currentIndex * -100;
+    wrapper.style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+  // Configuração do Autoplay (3 segundos)
+  let autoPlayInterval = setInterval(nextSlide, 2000);
+
+  // Pausar o autoplay quando o usuário interagir (opcional, melhora UX)
+  const stopAutoPlay = () => clearInterval(autoPlayInterval);
+</script>
+<script>
+  let currentIndex2 = 0;
+  const totalSlides2 = 3; 
+  const wrapper2 = document.getElementById('carousel-wrapper-2');
+
+  function updateCarousel2() {
+    const offset2 = currentIndex2 * -100;
+    wrapper2.style.transform = `translateX(${offset2}%)`;
+  }
+
+  function nextSlide2() {
+    currentIndex2 = (currentIndex2 + 1) % totalSlides2;
+    updateCarousel2();
+  }
+
+  function prevSlide2() {
+    currentIndex2 = (currentIndex2 - 1 + totalSlides2) % totalSlides2;
+    updateCarousel2();
+  }
+
+  // Autoplay da segunda sessão (4 segundos para não ficarem iguais)
+  setInterval(nextSlide2, 3000);
 </script>
 </body>
 </html>
